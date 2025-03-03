@@ -263,6 +263,8 @@ public class updateStudent1 extends javax.swing.JFrame {
             /* If a match is found:  
         - Retrieves the new username and password from input fields.  
         - If the new details are empty, prompts the user to enter valid details.  
+            if the user wants to retain the details, it prompts the user to enter the
+            same details.
         - Updates the username and password in the JSON record.  
         - Saves the updated data and redirects to the menu.  */
             found = false;
