@@ -274,6 +274,7 @@ public class addStudent extends javax.swing.JFrame {
     }
 
     public static void filecheck() throws FileNotFoundException, IOException, ParseException {
+        //checks for existing JSON file
         FileReader reader = new FileReader(filepath);
 
         if (reader.ready()) {
@@ -295,6 +296,7 @@ public class addStudent extends javax.swing.JFrame {
     }
 
     public static void save() throws IOException {
+        //saves new data to JSON file
         try {
             FileWriter file = new FileWriter(filepath);
             file.write(record.toJSONString());
